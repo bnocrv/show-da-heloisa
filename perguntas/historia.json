@@ -1,0 +1,487 @@
+[
+  {
+    "question": "Quem descobriu o Brasil em 1500?",
+    "options": [
+      "Cristóvão Colombo",
+      "Pedro Álvares Cabral",
+      "Vasco da Gama",
+      "Fernão de Magalhães"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que ano ocorreu a Independência do Brasil?",
+    "options": ["1808", "1822", "1889", "1500"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual foi a primeira capital do Brasil?",
+    "options": ["Rio de Janeiro", "São Paulo", "Salvador", "Brasília"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que país surgiram as pirâmides de Gizé?",
+    "options": ["Grécia", "Roma", "Egito", "China"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quem foi o primeiro presidente do Brasil?",
+    "options": [
+      "Dom Pedro I",
+      "Getúlio Vargas",
+      "Marechal Deodoro da Fonseca",
+      "Princesa Isabel"
+    ],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que ano começou a Primeira Guerra Mundial?",
+    "options": ["1905", "1914", "1922", "1939"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que ano terminou a Segunda Guerra Mundial?",
+    "options": ["1940", "1942", "1945", "1950"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quem foi o líder da Revolução Cubana em 1959?",
+    "options": [
+      "Che Guevara",
+      "Fidel Castro",
+      "Fulgencio Batista",
+      "Camilo Cienfuegos"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual império construiu o Coliseu em Roma?",
+    "options": [
+      "Império Grego",
+      "Império Egípcio",
+      "Império Persa",
+      "Império Romano"
+    ],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quem assinou a Lei Áurea, abolindo a escravidão no Brasil?",
+    "options": [
+      "Dom Pedro II",
+      "Princesa Isabel",
+      "Marechal Deodoro",
+      "Getúlio Vargas"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual era o nome dado aos guerreiros samurais no Japão feudal?",
+    "options": ["Ninjas", "Samurais", "Shoguns", "Daimyos"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quem foi o primeiro homem a pisar na Lua?",
+    "options": [
+      "Yuri Gagarin",
+      "Buzz Aldrin",
+      "Neil Armstrong",
+      "Michael Collins"
+    ],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual civilização antiga vivia na região onde hoje é o Peru?",
+    "options": ["Maias", "Astecas", "Incas", "Egípcios"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que ano o Muro de Berlim caiu?",
+    "options": ["1961", "1989", "1991", "1945"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual foi a principal causa da Guerra Fria?",
+    "options": [
+      "Disputa territorial na Europa",
+      "Conflito religioso",
+      "Disputa ideológica entre EUA (Capitalismo) e URSS (Socialismo)",
+      "Crise econômica mundial"
+    ],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quem foi o líder nazista da Alemanha durante a Segunda Guerra Mundial?",
+    "options": [
+      "Benito Mussolini",
+      "Joseph Stalin",
+      "Adolf Hitler",
+      "Winston Churchill"
+    ],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual o nome da 'Cidade Perdida' dos Incas?",
+    "options": ["Chichén Itzá", "Tikal", "Machu Picchu", "Tenochtitlán"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quem proclamou a República no Brasil em 1889?",
+    "options": [
+      "Dom Pedro I",
+      "Marechal Deodoro da Fonseca",
+      "Tiradentes",
+      "Princesa Isabel"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que foi o Renascimento?",
+    "options": [
+      "Um movimento religioso",
+      "Um período de guerra",
+      "Um movimento cultural, artístico e científico na Europa",
+      "A descoberta da América"
+    ],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que cidade americana ocorreu o ataque terrorista de 11 de setembro de 2001?",
+    "options": ["Washington D.C.", "Los Angeles", "Chicago", "Nova Iorque"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que foi a Revolução Francesa?",
+    "options": [
+      "Uma guerra contra a Inglaterra",
+      "Um período de grande mudança política e social que derrubou a monarquia na França",
+      "A independência da França",
+      "A unificação da França"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quem foi Tiradentes?",
+    "options": [
+      "Um presidente do Brasil",
+      "Um líder da Inconfidência Mineira",
+      "Um bandeirante",
+      "Um imperador romano"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi o 'Apartheid'?",
+    "options": [
+      "Um regime de segregação racial na África do Sul",
+      "Uma guerra civil na Angola",
+      "A independência da Índia",
+      "Um sistema econômico na Europa"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual foi a causa principal da Guerra do Vietnã?",
+    "options": [
+      "Disputa por petróleo",
+      "Conflito entre o Vietnã do Norte (comunista) e o Vietnã do Sul (capitalista)",
+      "Invasão japonesa",
+      "Conflito religioso"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi a 'Reforma Protestante'?",
+    "options": [
+      "Uma reforma agrária na Alemanha",
+      "Um movimento religioso que questionou a Igreja Católica, liderado por Martinho Lutero",
+      "A construção de novas igrejas na Itália",
+      "Uma guerra entre protestantes e católicos"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi a 'Guerra dos Cem Anos'?",
+    "options": [
+      "Uma guerra entre Roma e Cartago",
+      "Uma série de conflitos entre a França e a Inglaterra",
+      "Uma guerra civil na China",
+      "A guerra de independência dos EUA"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quem foi o líder da Revolução Russa de 1917?",
+    "options": [
+      "Joseph Stalin",
+      "Mikhail Gorbachev",
+      "Czar Nicolau II",
+      "Vladimir Lenin"
+    ],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi a 'Guerra de Canudos' no Brasil?",
+    "options": [
+      "Uma guerra contra o Paraguai",
+      "Um conflito entre o exército brasileiro e um movimento popular liderado por Antônio Conselheiro",
+      "Uma revolta de escravos na Bahia",
+      "A luta pela independência"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o nome do período em que Getúlio Vargas governou o Brasil de forma ditatorial?",
+    "options": [
+      "República Velha",
+      "Ditadura Militar",
+      "Estado Novo",
+      "Regência"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi o 'Iluminismo'?",
+    "options": [
+      "A invenção da lâmpada elétrica",
+      "Um movimento intelectual que enfatizava a razão e a ciência",
+      "Um estilo de arte barroca",
+      "Um período de seca na Europa"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Em que ano ocorreu a Proclamação da República no Brasil?",
+    "options": ["1822", "1888", "1889", "1930"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual foi a 'Revolta da Vacina'?",
+    "options": [
+      "Uma revolta contra a falta de vacinas",
+      "Uma revolta popular no Rio de Janeiro contra a vacinação obrigatória (varíola)",
+      "Uma guerra por medicamentos",
+      "Uma greve de médicos"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quem foi Joana d'Arc?",
+    "options": [
+      "Uma rainha da Inglaterra",
+      "Uma heroína francesa na Guerra dos Cem Anos",
+      "Uma pintora renascentista",
+      "Uma deusa grega"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi a 'Guerra Fria'?",
+    "options": [
+      "Uma guerra travada na Antártida",
+      "Uma guerra de inverno entre Rússia e Finlândia",
+      "Um período de tensão política e militar entre os EUA e a URSS, sem conflito direto",
+      "Uma guerra nuclear"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o nome do movimento artístico e cultural que surgiu na Itália no século XIV?",
+    "options": ["Barroco", "Renascimento", "Iluminismo", "Romantismo"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual evento marcou o início da Idade Média?",
+    "options": [
+      "A Queda do Império Romano do Ocidente",
+      "A descoberta da América",
+      "A Revolução Francesa",
+      "O nascimento de Cristo"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual evento marcou o fim da Idade Média e o início da Idade Moderna?",
+    "options": [
+      "A Queda de Constantinopla",
+      "A Primeira Guerra Mundial",
+      "A invenção da imprensa",
+      "A Revolução Industrial"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi o 'Holocausto'?",
+    "options": [
+      "O bombardeio de Hiroshima",
+      "A Grande Fome na China",
+      "O genocídio sistemático de judeus e outros grupos pelos nazistas",
+      "Uma epidemia na Idade Média"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi a 'Guerra do Paraguai'?",
+    "options": [
+      "Uma guerra civil no Paraguai",
+      "Um conflito entre Paraguai e a Tríplice Aliança (Brasil, Argentina, Uruguai)",
+      "Uma guerra entre Paraguai e Bolívia",
+      "A independência do Paraguai"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Em que ano a família real portuguesa veio para o Brasil?",
+    "options": ["1500", "1808", "1822", "1889"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que foi o 'Tratado de Tordesilhas'?",
+    "options": [
+      "O tratado de paz da Primeira Guerra Mundial",
+      "Um acordo entre Portugal e Espanha para dividir as terras 'descobertas'",
+      "A lei que aboliu a escravidão",
+      "A constituição do Brasil Império"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que foi o 'Plano Marshall'?",
+    "options": [
+      "O plano de ataque nazista à URSS",
+      "O programa de recuperação econômica europeia financiado pelos EUA após a Segunda Guerra",
+      "O plano de independência da Índia",
+      "O plano econômico da Ditadura Militar brasileira"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual foi a principal consequência da 'Revolução Industrial'?",
+    "options": [
+      "O fim das monarquias",
+      "A diminuição da poluição",
+      "A transição da produção manual para a produção mecanizada (fábricas)",
+      "O início da Idade Média"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que foi a 'Crise de 1929' (A Grande Depressão)?",
+    "options": [
+      "Uma crise política no Brasil",
+      "Uma grave crise econômica mundial que começou nos EUA",
+      "Uma seca severa na Europa",
+      "O início da Segunda Guerra Mundial"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que foi o 'Período Meiji' no Japão?",
+    "options": [
+      "O período feudal dos samurais",
+      "O período de isolamento do Japão",
+      "Um período de rápida modernização e industrialização do Japão",
+      "A ocupação americana do Japão"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que foi a 'Guerra dos Bôeres'?",
+    "options": [
+      "Conflitos na África do Sul entre colonos de origem holandesa (Bôeres) e o Império Britânico",
+      "Uma guerra civil na Rússia",
+      "A guerra de independência da Argélia",
+      "Uma revolta indígena no México"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que foi o 'Ato Institucional nº 5' (AI-5) no Brasil?",
+    "options": [
+      "A lei que criou o Real",
+      "A lei que aboliu a escravidão",
+      "Um decreto da Ditadura Militar que aumentou a repressão e fechou o Congresso",
+      "A constituição de 1988"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual foi a 'Revolta dos Malês'?",
+    "options": [
+      "Uma revolta de escravos muçulmanos (Malês) em Salvador, Bahia",
+      "Uma revolta de marinheiros no Rio de Janeiro",
+      "Uma greve de operários em São Paulo",
+      "Uma rebelião de colonos portugueses"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que foi a 'Revolução Gloriosa' na Inglaterra?",
+    "options": [
+      "A revolução que levou Oliver Cromwell ao poder",
+      "A revolução que depôs o Rei Jaime II e estabeleceu a monarquia parlamentar",
+      "A guerra de independência contra Roma",
+      "A unificação da Inglaterra"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual o objetivo da 'Conferência de Berlim' (1884-1885)?",
+    "options": [
+      "Acabar com a Primeira Guerra Mundial",
+      "Criar a União Europeia",
+      "Regular a colonização e o comércio europeu na África (Partilha da África)",
+      "Discutir as mudanças climáticas"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,382 @@
+[
+  {
+    "question": "Qual planeta é conhecido como o 'Planeta Vermelho'?",
+    "options": ["Vênus", "Marte", "Júpiter", "Saturno"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a fórmula química da água?",
+    "options": ["CO2", "O2", "H2O", "NaCl"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual gás as plantas absorvem da atmosfera durante a fotossíntese?",
+    "options": ["Oxigênio", "Nitrogênio", "Dióxido de Carbono", "Hidrogênio"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o maior órgão do corpo humano?",
+    "options": ["Fígado", "Cérebro", "Pele", "Coração"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quantos planetas existem em nosso sistema solar?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a força que nos mantém presos ao chão?",
+    "options": ["Magnetismo", "Fricção", "Gravidade", "Eletricidade"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o centro do nosso sistema solar?",
+    "options": ["A Lua", "A Terra", "O Sol", "Marte"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como é chamado o processo em que a água vira vapor?",
+    "options": ["Condensação", "Solidificação", "Evaporação", "Sublimação"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Que parte da planta é geralmente responsável pela absorção de água?",
+    "options": ["Folhas", "Flores", "Caule", "Raízes"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o símbolo químico do oxigênio?",
+    "options": ["H", "O", "C", "N"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quantas patas tem uma aranha?",
+    "options": ["4", "6", "8", "10"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o maior animal do mundo?",
+    "options": [
+      "Elefante Africano",
+      "Baleia Azul",
+      "Tubarão-Baleia",
+      "Lula Colossal"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o estado da água quando está em forma de gelo?",
+    "options": ["Líquido", "Gasoso", "Sólido", "Plasma"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que os morcegos usam para 'ver' no escuro?",
+    "options": ["Visão noturna", "Ecolocalização", "Olfato", "Audição aguçada"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o símbolo químico do ouro?",
+    "options": ["Go", "Ag", "Au", "Or"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual órgão humano bombeia sangue pelo corpo?",
+    "options": ["Pulmão", "Cérebro", "Estômago", "Coração"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "A fotossíntese produz qual gás essencial para a respiração humana?",
+    "options": ["Oxigênio", "Dióxido de Carbono", "Nitrogênio", "Hélio"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O som viaja mais rápido em qual meio?",
+    "options": ["Ar", "Água", "Vácuo", "Aço"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que é um herbívoro?",
+    "options": [
+      "Animal que come carne",
+      "Animal que come plantas",
+      "Animal que come de tudo",
+      "Animal que não come"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se chama o satélite natural da Terra?",
+    "options": ["Sol", "Marte", "Lua", "Estrela"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a 'usina de energia' da célula?",
+    "options": ["Núcleo", "Mitocôndria", "Ribossomo", "Membrana Plasmática"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "A qual temperatura (em Celsius) a água ferve ao nível do mar?",
+    "options": ["0°C", "50°C", "100°C", "212°C"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o metal mais abundante na crosta terrestre?",
+    "options": ["Ferro", "Ouro", "Cobre", "Alumínio"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que causa as marés nos oceanos?",
+    "options": [
+      "A rotação da Terra",
+      "A gravidade da Lua",
+      "Os ventos",
+      "Terremotos submarinos"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é a substância natural mais dura conhecida?",
+    "options": ["Quartzo", "Ferro", "Diamante", "Grafite"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o principal gás que compõe a atmosfera da Terra?",
+    "options": [
+      "Oxigênio (21%)",
+      "Nitrogênio (78%)",
+      "Dióxido de Carbono (<1%)",
+      "Argônio (<1%)"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quais são os três estados primários da matéria?",
+    "options": [
+      "Sólido, Líquido, Gás",
+      "Quente, Frio, Morno",
+      "Metal, Madeira, Plástico",
+      "Ácido, Base, Neutro"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é um 'ano-luz'?",
+    "options": [
+      "Uma medida de tempo",
+      "Uma medida de velocidade",
+      "Uma medida de distância",
+      "Uma medida de brilho"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o nome da galáxia em que vivemos?",
+    "options": [
+      "Andrômeda",
+      "Galáxia do Sombreiro",
+      "Via Láctea",
+      "Galáxia do Triângulo"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Como se chama o processo de divisão celular que cria células sexuais (gametas)?",
+    "options": ["Mitose", "Meiose", "Fotossíntese", "Osmose"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o pH da água pura?",
+    "options": ["0", "5", "7", "14"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o planeta mais próximo do Sol?",
+    "options": ["Mercúrio", "Vênus", "Terra", "Marte"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Quem é considerado o 'pai da evolução' pela teoria da seleção natural?",
+    "options": [
+      "Gregor Mendel",
+      "Louis Pasteur",
+      "Charles Darwin",
+      "Isaac Newton"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o elemento químico com número atômico 1?",
+    "options": ["Hélio", "Oxigênio", "Carbono", "Hidrogênio"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é 'magma'?",
+    "options": [
+      "Rocha derretida abaixo da superfície da Terra",
+      "Rocha derretida na superfície da Terra",
+      "Cinza de vulcão",
+      "Um tipo de rocha sólida"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é 'lava'?",
+    "options": [
+      "Rocha derretida abaixo da superfície da Terra",
+      "Rocha derretida na superfície da Terra (fora do vulcão)",
+      "Vapor de vulcão",
+      "Rocha sedimentar"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é a camada mais externa da Terra?",
+    "options": ["Núcleo", "Manto", "Crosta", "Atmosfera"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que mede a Escala Richter?",
+    "options": [
+      "A velocidade do vento",
+      "A temperatura",
+      "A intensidade de terremotos",
+      "A acidez da chuva"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o maior planeta do sistema solar?",
+    "options": ["Terra", "Saturno", "Júpiter", "Urano"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é a unidade de medida da corrente elétrica?",
+    "options": ["Volt", "Watt", "Ohm", "Ampere"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é a velocidade da luz no vácuo (aproximadamente)?",
+    "options": ["300 km/s", "3.000 km/s", "30.000 km/s", "300.000 km/s"],
+    "answer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que significa a sigla 'DNA'?",
+    "options": [
+      "Ácido Desoxirribonucleico",
+      "Ácido Ribonucleico",
+      "Dioxina Nuclear Ativa",
+      "Densidade Natural de Alumínio"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Quem propôs as três leis do movimento?",
+    "options": [
+      "Albert Einstein",
+      "Galileu Galilei",
+      "Isaac Newton",
+      "Nikola Tesla"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é a Terceira Lei de Newton?",
+    "options": [
+      "Inércia",
+      "Ação e Reação",
+      "Força = Massa x Aceleração",
+      "Gravitação Universal"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é um átomo?",
+    "options": [
+      "A menor parte da matéria viva",
+      "A menor unidade de um elemento químico",
+      "Um conjunto de moléculas",
+      "Uma célula"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é a fórmula da Teoria da Relatividade Restrita de Einstein que relaciona energia e massa?",
+    "options": ["F = ma", "E = mc²", "V = IR", "H2O"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual partícula subatômica tem carga negativa?",
+    "options": ["Próton", "Nêutron", "Elétron", "Fóton"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual partícula subatômica tem carga positiva?",
+    "options": ["Próton", "Nêutron", "Elétron", "Múon"],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é a Penicilina, descoberta por Alexander Fleming?",
+    "options": ["Um vírus", "Um analgésico", "Um antibiótico", "Uma vitamina"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é a diferença entre 'massa' e 'peso'?",
+    "options": [
+      "São a mesma coisa",
+      "Massa é a quantidade de matéria, Peso é a força da gravidade sobre a massa",
+      "Peso é a quantidade de matéria, Massa é a força da gravidade",
+      "Massa é medida em Newtons, Peso em Quilogramas"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  }
+]

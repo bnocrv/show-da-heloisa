@@ -1,0 +1,1885 @@
+<!-- 
+  Show da Heloísa (Tema Unicórnio)
+  Desenvolvido por Bruno S. Carvalho
+  GitHub: https://github.com/bnocrv
+  Email: bnocrv@proton.me
+  Release: 10/09/2025
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show da Heloísa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        /* Paleta de Cores - Tema Unicórnio */
+        --primary-color: #f72585; /* Rosa Neon */
+        --secondary-color: #4361ee; /* Azul Vibrante */
+        --background-start: #ffc8dd; /* Rosa claro */
+        --background-end: #bde0fe; /* Azul claro */
+        --text-color: #333333; /* Texto escuro para legibilidade */
+        --text-color-dark: #555555; /* Texto escuro (secundário) */
+        --surface-color: rgba(
+          255,
+          255,
+          255,
+          0.6
+        ); /* Branco semi-transparente */
+        --border-color: #000000; /* Contorno preto */
+
+        /* Cores de Status (Mantidas para clareza) */
+        --correct-color: #28a745;
+        --incorrect-color: #dc3545;
+        --warning-color: #ffc107;
+        --neutral-color: #6c757d; /* Cinza mais escuro */
+
+        /* Fontes */
+        --font-title: "Fredoka One", cursive;
+        --font-body: "Poppins", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: var(--font-body);
+        background: linear-gradient(
+          135deg,
+          var(--background-start),
+          var(--background-end)
+        );
+        color: var(--text-color); /* Texto principal agora é escuro */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+        padding: 1rem;
+        overflow-x: hidden;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 500px;
+        padding: 2.5rem;
+        border-radius: 20px;
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.4
+        ); /* Fundo branco levemente transparente */
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        border: 2px solid var(--border-color); /* Contorno preto */
+        backdrop-filter: blur(5px);
+        margin: auto;
+        position: relative;
+      }
+
+      .screen {
+        display: none;
+      }
+
+      .screen.active {
+        display: block;
+        animation: fadeIn 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .game-title {
+        font-family: var(--font-title);
+        font-size: 4rem;
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* Contorno preto no título */
+        text-shadow: -1.5px -1.5px 0 #000, 1.5px -1.5px 0 #000,
+          -1.5px 1.5px 0 #000, 1.5px 1.5px 0 #000;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Novo estilo para o logo */
+      .game-logo {
+        width: 100%;
+        max-width: 250px; /* Ajuste este valor se desejar (original 800px) */
+        height: auto; /* Mantém a proporção */
+        margin-bottom: 1rem; /* Espaço abaixo do logo */
+      }
+
+      .subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        color: var(--text-color-dark); /* Texto escuro */
+        font-weight: 400;
+      }
+
+      /* Estilos de Autenticação */
+      .auth-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 1.5rem;
+      }
+
+      .auth-form input {
+        padding: 15px;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+        background-color: var(--surface-color); /* Fundo claro */
+        color: var(--text-color); /* Texto escuro */
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+      .auth-form input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 10px var(--primary-color);
+      }
+
+      .auth-links {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .auth-links a {
+        color: var(--text-color-dark); /* Texto escuro */
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .auth-links a:hover {
+        color: var(--primary-color);
+      }
+
+      .google-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+        background-color: #ffffff;
+        color: #3c4043;
+        border: 2px solid var(--border-color); /* Contorno preto */
+        font-weight: 600;
+      }
+      .google-btn:hover {
+        background-color: #f1f1f1;
+        border-color: #000;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .google-btn svg {
+        width: 20px;
+        height: 20px;
+      }
+
+      .auth-error {
+        color: var(--incorrect-color);
+        margin-top: 10px;
+        font-size: 0.9rem;
+        min-height: 1.2rem;
+        transition: color 0.3s ease;
+      }
+
+      /* User Info Header */
+      #user-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 20px;
+        background: var(--surface-color); /* Fundo claro */
+        border-radius: 50px;
+        margin-bottom: 20px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+      }
+
+      #user-info .user-details {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      #user-info span {
+        font-weight: bold;
+        color: var(--text-color);
+      }
+
+      #logout-btn {
+        background: transparent;
+        border: none;
+        color: var(--text-color-dark); /* Texto escuro */
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+      }
+      #logout-btn:hover {
+        color: var(--incorrect-color);
+      }
+
+      .category-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-bottom: 2.5rem;
+      }
+
+      .category-btn {
+        font-family: var(--font-body);
+        font-weight: 600;
+        padding: 20px 10px; /* Alterado de 10px 5px para uma altura retangular */
+        border-radius: 12px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+        background-color: var(--surface-color); /* Fundo claro */
+        color: var(--text-color-dark); /* Texto escuro */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* aspect-ratio: 1 / 1; */ /* Removido para permitir retângulos */
+      }
+
+      .category-btn .category-title {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+
+      .category-btn .category-subgenres {
+        font-size: 0.65rem;
+        margin-top: 6px;
+        line-height: 1.2;
+        font-weight: 400;
+        padding: 0 2px;
+        color: var(--text-color-dark); /* Texto escuro */
+      }
+
+      .category-btn:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: var(--text-color);
+        transform: translateY(-5px);
+      }
+      .category-btn.selected {
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: white;
+        border-color: var(--border-color); /* Mantém contorno preto */
+        box-shadow: 0 0 15px var(--primary-color);
+      }
+      .category-btn:hover .category-subgenres,
+      .category-btn.selected .category-subgenres {
+        color: white;
+      }
+
+      .btn {
+        font-family: var(--font-body);
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 15px 20px;
+        border-radius: 50px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+        background-color: var(--surface-color); /* Fundo claro */
+        color: var(--text-color); /* Texto escuro */
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        width: 100%;
+        display: block;
+        letter-spacing: 1px;
+      }
+
+      .btn:hover:not(:disabled) {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn.primary-btn {
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        color: #fff; /* Texto branco no botão primário */
+        box-shadow: 0 4px 15px rgba(74, 0, 224, 0.4);
+      }
+
+      .btn:disabled {
+        background: var(--neutral-color);
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      #game-screen .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        background-color: var(--surface-color); /* Fundo claro */
+        border-radius: 50px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+      }
+
+      #game-screen .stat-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: var(--text-color); /* Texto escuro */
+      }
+
+      #question-container {
+        background-color: transparent;
+        padding: 1.5rem 0;
+        margin-bottom: 1.5rem;
+      }
+
+      #question-text {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+        color: #000; /* Texto preto para máxima legibilidade */
+      }
+
+      #options-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      .option-btn {
+        text-align: left;
+        padding: 15px 20px;
+        background-color: var(--surface-color); /* Fundo claro */
+        border: 2px solid var(--border-color); /* Contorno preto */
+        color: var(--text-color); /* Texto escuro */
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
+
+      .option-btn:hover:not(.disabled) {
+        background-color: rgba(255, 255, 255, 0.8);
+        border-color: var(--primary-color);
+      }
+
+      .option-btn.correct {
+        background-color: var(--correct-color);
+        border-color: var(--border-color);
+        color: white;
+        animation: pulse 0.5s;
+      }
+
+      .option-btn.incorrect {
+        background-color: var(--incorrect-color);
+        border-color: var(--border-color);
+        color: white;
+        animation: shake 0.5s;
+      }
+
+      .option-btn.disabled {
+        cursor: not-allowed;
+        opacity: 0.7;
+      }
+
+      @keyframes shake {
+        0%,
+        100% {
+          transform: translateX(0);
+        }
+        20%,
+        60% {
+          transform: translateX(-5px);
+        }
+        40%,
+        80% {
+          transform: translateX(5px);
+        }
+      }
+
+      @keyframes pulse {
+        50% {
+          transform: scale(1.03);
+        }
+      }
+
+      #tip-button {
+        margin-top: 20px;
+        background: transparent;
+        border: 2px solid var(--border-color); /* Contorno preto */
+        color: var(--text-color-dark); /* Texto escuro */
+      }
+      #tip-button:hover:not(:disabled) {
+        border-color: var(--warning-color);
+        color: var(--warning-color);
+      }
+
+      #tip-text {
+        margin-top: 15px;
+        padding: 15px;
+        background-color: var(--surface-color); /* Fundo claro */
+        border-radius: 12px;
+        font-style: italic;
+        color: var(--text-color-dark); /* Texto escuro */
+        border-left: 4px solid var(--primary-color);
+        border-top: 2px solid var(--border-color);
+        border-right: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+      }
+
+      #score-screen h2,
+      #highscore-screen h2,
+      #nickname-screen h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #000; /* Texto escuro */
+        font-weight: 700;
+      }
+
+      #final-score {
+        font-size: 3rem;
+        font-weight: 700;
+        background: linear-gradient(
+          45deg,
+          var(--primary-color),
+          var(--secondary-color)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 #000; /* Contorno leve */
+        margin-bottom: 1rem;
+      }
+
+      #save-score-form {
+        margin-bottom: 20px;
+      }
+
+      #highscore-list {
+        list-style: none;
+        padding: 0;
+        text-align: left;
+      }
+      #highscore-list li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 15px;
+        font-size: 1.1rem;
+        background-color: var(--surface-color); /* Fundo claro */
+        border-radius: 8px;
+        margin-bottom: 8px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+        border-left-width: 4px;
+        transition: all 0.3s ease;
+      }
+      #highscore-list li:hover {
+        transform: translateX(5px);
+        border-left-color: var(--primary-color);
+      }
+
+      .highscore-entry {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+      }
+
+      .highscore-name {
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .highscore-score {
+        font-weight: 700;
+        margin-left: 10px;
+      }
+
+      #highscore-list li:nth-child(1) .highscore-score {
+        color: #d4af37; /* Dourado mais escuro */
+      }
+      #highscore-list li:nth-child(2) .highscore-score {
+        color: #aaa; /* Prata mais escuro */
+      }
+      #highscore-list li:nth-child(3) .highscore-score {
+        color: #cd7f32;
+      }
+      #highscore-list li:nth-child(1) {
+        border-left-color: #d4af37;
+      }
+      #highscore-list li:nth-child(2) {
+        border-left-color: #aaa;
+      }
+      #highscore-list li:nth-child(3) {
+        border-left-color: #cd7f32;
+      }
+
+      #timer-container {
+        width: 100%;
+        height: 8px;
+        background-color: var(--surface-color); /* Fundo claro para a barra */
+        border-radius: 50px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        border: 1px solid var(--border-color);
+      }
+      #timer-bar {
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          var(--secondary-color),
+          var(--primary-color)
+        );
+        width: 100%;
+        border-radius: 50px;
+        transition: width 0.1s linear, background-color 0.5s ease;
+      }
+
+      .bonus-popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--warning-color);
+        text-shadow: 0 0 10px var(--warning-color), -1px -1px 0 #000,
+          1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        animation: bonus-fade 1.5s ease-out forwards;
+        pointer-events: none;
+      }
+
+      @keyframes bonus-fade {
+        from {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+        to {
+          transform: translate(-50%, -150%) scale(1.5);
+          opacity: 0;
+        }
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        padding: 10px;
+        font-size: 0.9rem;
+        color: var(--text-color-dark); /* Texto escuro */
+        opacity: 0.7;
+      }
+
+      footer a {
+        color: var(--text-color-dark); /* Texto escuro */
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: var(--primary-color);
+      }
+
+      #score-icon-container {
+        margin-bottom: 1rem;
+        height: 80px;
+      }
+
+      #score-icon-container svg {
+        width: 80px;
+        height: 80px;
+        animation: popIn 0.5s 0.2s ease-out forwards;
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      @keyframes popIn {
+        from {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        to {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+
+      #final-stats-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 1.5rem 0 2.5rem 0;
+        gap: 10px;
+      }
+
+      .stat-box {
+        background: var(--surface-color); /* Fundo claro */
+        padding: 1rem;
+        border-radius: 12px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border: 2px solid var(--border-color); /* Contorno preto */
+      }
+
+      .stat-value {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-color); /* Texto escuro */
+      }
+
+      .stat-label {
+        font-size: 0.8rem;
+        color: var(--text-color-dark); /* Texto escuro */
+        text-transform: uppercase;
+      }
+
+      @media (max-width: 480px) {
+        .container {
+          padding: 1.5rem;
+        }
+        .game-title {
+          font-size: 3rem;
+        }
+        #question-text {
+          font-size: 1.3rem;
+        }
+        .category-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Elementos de áudio -->
+    <audio id="audio-click" src="audio/click.ogg" preload="auto"></audio>
+    <audio id="audio-question" src="audio/question.ogg" preload="auto"></audio>
+    <audio id="audio-correct" src="audio/yes.ogg" preload="auto"></audio>
+    <audio id="audio-incorrect" src="audio/no.ogg" preload="auto"></audio>
+    <audio id="audio-timeout" src="audio/timeout.ogg" preload="auto"></audio>
+    <audio
+      id="audio-background"
+      src="audio/overnight.ogg"
+      loop
+      preload="auto"
+    ></audio>
+
+    <div class="container">
+      <!-- Tela de Login -->
+      <div id="login-screen" class="screen active">
+        <!-- O H1 foi substituído pela tag IMG -->
+        <img src="logo.png" alt="Show da Heloísa Logo" class="game-logo" />
+        <p class="subtitle">Acesse sua conta para continuar.</p>
+        <form id="login-form" class="auth-form">
+          <input type="email" id="login-email" placeholder="E-mail" required />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Senha"
+            required
+          />
+          <p id="login-error" class="auth-error"></p>
+          <button type="submit" class="btn primary-btn">Entrar</button>
+          <button type="button" id="google-login-btn" class="btn google-btn">
+            <svg viewBox="0 0 48 48">
+              <path
+                fill="#EA4335"
+                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+              ></path>
+              <path
+                fill="#4285F4"
+                d="M46.98 24.55c0-1.57-.15-3.09-.42-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+              ></path>
+              <path
+                fill="#FBBC05"
+                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+              ></path>
+              <path
+                fill="#34A853"
+                d="M24 48c6.48 0 11.93-2.13 15.89-5.82l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+              ></path>
+              <path fill="none" d="M0 0h48v48H0z"></path>
+            </svg>
+            &nbsp; Entrar com Google
+          </button>
+        </form>
+        <div class="auth-links">
+          <a href="#" id="forgot-password-link">Esqueceu a senha?</a>
+          <a href="#" id="show-register-link"
+            >Não tem uma conta? <strong>Cadastre-se</strong></a
+          >
+        </div>
+      </div>
+
+      <!-- Tela de Cadastro -->
+      <div id="register-screen" class="screen">
+        <!-- O H1 foi substituído pela tag IMG -->
+        <img src="logo.png" alt="Show da Heloísa Logo" class="game-logo" />
+        <p class="subtitle">É rápido e fácil.</p>
+        <form id="register-form" class="auth-form">
+          <input
+            type="email"
+            id="register-email"
+            placeholder="E-mail"
+            required
+          />
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Senha (mínimo 6 caracteres)"
+            required
+          />
+          <p id="register-error" class="auth-error"></p>
+          <button type="submit" class="btn primary-btn">Criar Conta</button>
+          <button type="button" id="google-register-btn" class="btn google-btn">
+            <svg viewBox="0 0 48 48">
+              <path
+                fill="#EA4335"
+                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
+              ></path>
+              <path
+                fill="#4285F4"
+                d="M46.98 24.55c0-1.57-.15-3.09-.42-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
+              ></path>
+              <path
+                fill="#FBBC05"
+                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
+              ></path>
+              <path
+                fill="#34A853"
+                d="M24 48c6.48 0 11.93-2.13 15.89-5.82l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
+              ></path>
+              <path fill="none" d="M0 0h48v48H0z"></path>
+            </svg>
+            &nbsp;Cadastrar com Google
+          </button>
+        </form>
+        <div class="auth-links">
+          <a href="#" id="show-login-link"><strong>Já tenho conta</strong></a>
+        </div>
+      </div>
+
+      <!-- Tela de Nickname -->
+      <div id="nickname-screen" class="screen">
+        <h2>Defina seu Apelido</h2>
+        <p class="subtitle">Este nome aparecerá nos placares.</p>
+        <form id="nickname-form" class="auth-form">
+          <input
+            type="text"
+            id="nickname-input"
+            placeholder="Seu nick (até 15 caracteres)"
+            required
+            maxlength="15"
+          />
+          <p id="nickname-error" class="auth-error"></p>
+          <button type="submit" class="btn primary-btn">Salvar e Jogar</button>
+        </form>
+      </div>
+
+      <!-- Tela Inicial -->
+      <div id="start-screen" class="screen">
+        <div id="user-info" style="display: none">
+          <div class="user-details">
+            <span id="user-nickname"></span>
+          </div>
+          <button id="logout-btn">Sair</button>
+        </div>
+        <!-- O H1 "Bem-Vindo" foi substituído pelo logo -->
+        <img src="logo.png" alt="Show da Heloísa Logo" class="game-logo" />
+        <p class="subtitle">Vamos aprender e se divertir juntos?</p>
+        <div id="category-selection">
+          <h2
+            style="
+              margin-bottom: 20px;
+              font-weight: 600;
+              color: var(--text-color-dark);
+              font-size: 1rem;
+              text-transform: uppercase;
+              letter-spacing: 1px;
+            "
+          >
+            Escolha as matérias
+          </h2>
+          <div class="category-grid">
+            <!-- MUDANÇA: data-category atualizado para o nome da matéria -->
+            <button class="category-btn" data-category="portugues">
+              <span class="category-title">português</span>
+            </button>
+
+            <!-- MUDANÇA: data-category atualizado para o nome da matéria -->
+            <button class="category-btn" data-category="matematica">
+              <span class="category-title">matemática</span>
+            </button>
+
+            <!-- MUDANÇA: data-category atualizado para o nome da matéria -->
+            <button class="category-btn" data-category="ingles">
+              <span class="category-title">inglês</span>
+            </button>
+
+            <!-- MUDANÇA: data-category atualizado para o nome da matéria -->
+            <button class="category-btn" data-category="ciencias">
+              <span class="category-title">ciências</span>
+            </button>
+
+            <!-- MUDANÇA: data-category atualizado para o nome da matéria -->
+            <button class="category-btn" data-category="historia">
+              <span class="category-title">história</span>
+            </button>
+
+            <!-- MUDANÇA: data-category atualizado para o nome da matéria -->
+            <button class="category-btn" data-category="geografia">
+              <span class="category-title">geografia</span>
+            </button>
+          </div>
+          <button id="start-game-btn" class="btn primary-btn" disabled>
+            Iniciar Partida
+          </button>
+          <button
+            id="view-highscores-btn"
+            class="btn"
+            style="margin-top: 10px; background: transparent"
+          >
+            RANKING
+          </button>
+        </div>
+      </div>
+
+      <!-- Tela do Jogo -->
+      <div id="game-screen" class="screen">
+        <div class="header">
+          <div id="lives-container" class="stat-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24"
+              fill="#dc3545"
+              stroke="#dc3545"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+              ></path>
+            </svg>
+            <span>3</span>
+          </div>
+          <div id="streak-container" class="stat-item">🔥 <span>0</span></div>
+          <div id="score-container" class="stat-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24"
+              fill="#ffc107"
+              stroke="#ffc107"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              ></polygon>
+            </svg>
+            <span>0</span>
+          </div>
+        </div>
+        <div id="timer-container">
+          <div id="timer-bar"></div>
+        </div>
+        <div id="question-container">
+          <p id="question-text">Carregando pergunta...</p>
+          <div id="options-container"></div>
+        </div>
+        <button id="tip-button" class="btn">Usar Dica (2)</button>
+        <!-- O <p id="tip-text"> foi removido daqui -->
+      </div>
+
+      <!-- Tela de Transição -->
+      <div id="transition-screen" class="screen">
+        <h2
+          id="transition-feedback"
+          style="font-size: 2.5rem; margin-bottom: 1rem"
+        >
+          Resposta Correta!
+        </h2>
+        <p
+          class="subtitle"
+          style="margin-bottom: 2.5rem"
+          id="transition-details"
+        ></p>
+        <button id="continue-game-btn" class="btn primary-btn">
+          Próxima Pergunta
+        </button>
+      </div>
+
+      <!-- Tela de Fim de Jogo -->
+      <div id="score-screen" class="screen">
+        <div id="score-icon-container"></div>
+        <h2 id="score-title">Fim de Jogo!</h2>
+        <p id="final-score">0</p>
+        <div id="final-stats-container">
+          <div class="stat-box">
+            <span class="stat-value" id="stats-correct">0</span>
+            <span class="stat-label">Acertos</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="stats-accuracy">0%</span>
+            <span class="stat-label">Precisão</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="stats-streak">0</span>
+            <span class="stat-label">Maior Sequência</span>
+          </div>
+        </div>
+        <form id="save-score-form" style="display: none">
+          <p
+            id="highscore-message"
+            style="margin-bottom: 1.5rem; color: var(--text-color-dark)"
+          ></p>
+          <button type="submit" id="save-score-btn" class="btn primary-btn">
+            Salvar Placar
+          </button>
+        </form>
+        <button
+          id="play-again-btn"
+          class="btn"
+          style="background: transparent; margin-top: 10px"
+        >
+          Jogar Novamente
+        </button>
+      </div>
+
+      <!-- Tela de High Scores -->
+      <div id="highscore-screen" class="screen">
+        <h2>RANKING</h2>
+        <ol id="highscore-list">
+          <li>Carregando...</li>
+        </ol>
+        <button
+          id="back-to-start-btn"
+          class="btn primary-btn"
+          style="margin-top: 20px"
+        >
+          Voltar
+        </button>
+      </div>
+    </div>
+
+    <footer>
+      <a
+        href="https://github.com/bnocrv"
+        target="_blank"
+        rel="noopener noreferrer"
+        >bnocrv@proton.me</a
+      >
+    </footer>
+
+    <script type="module">
+      // --- SDKs do Firebase ---
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+      import {
+        getAuth,
+        onAuthStateChanged,
+        createUserWithEmailAndPassword,
+        signInWithEmailAndPassword,
+        signInWithPopup,
+        GoogleAuthProvider,
+        signOut,
+        updateProfile,
+        sendPasswordResetEmail,
+        getAdditionalUserInfo,
+      } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        query,
+        orderBy,
+        limit,
+        getDocs,
+      } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+      // --- Configuração do Firebase ---
+      // ATENÇÃO: As chaves do Firebase foram mantidas, mas estão visíveis publicamente.
+      // Em um app de produção, proteja-as usando regras de segurança (Firestore)
+      // e domínios autorizados (Authentication).
+      const firebaseConfig = {
+        apiKey: "AIzaSyCFaNU6QxDMByy6nUUIq1yfweQD_l5_EGI",
+        authDomain: "show-da-heloisa.firebaseapp.com",
+        projectId: "show-da-heloisa",
+        storageBucket: "show-da-heloisa.firebasestorage.app",
+        messagingSenderId: "901385912732",
+        appId: "1:901385912732:web:3380a8b00eb17a0500c859",
+        measurementId: "G-S4P3QWQSSJ",
+      };
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+      const db = getFirestore(app);
+      const highscoresCollection = collection(db, "highscores");
+
+      // --- ELEMENTOS DO DOM ---
+      const screens = {
+        login: document.getElementById("login-screen"),
+        register: document.getElementById("register-screen"),
+        nickname: document.getElementById("nickname-screen"),
+        start: document.getElementById("start-screen"),
+        game: document.getElementById("game-screen"),
+        transition: document.getElementById("transition-screen"),
+        score: document.getElementById("score-screen"),
+        highscore: document.getElementById("highscore-screen"),
+      };
+
+      // Botões e Forms de Auth
+      const loginForm = document.getElementById("login-form");
+      const registerForm = document.getElementById("register-form");
+      const nicknameForm = document.getElementById("nickname-form");
+      const googleLoginBtn = document.getElementById("google-login-btn");
+      const googleRegisterBtn = document.getElementById("google-register-btn");
+      const logoutBtn = document.getElementById("logout-btn");
+      const showRegisterLink = document.getElementById("show-register-link");
+      const showLoginLink = document.getElementById("show-login-link");
+      const forgotPasswordLink = document.getElementById(
+        "forgot-password-link"
+      );
+
+      const userNicknameDisplay = document.getElementById("user-nickname");
+      const userInfoHeader = document.getElementById("user-info");
+
+      const buttons = {
+        start: document.getElementById("start-game-btn"),
+        playAgain: document.getElementById("play-again-btn"),
+        tip: document.getElementById("tip-button"),
+        viewHighscores: document.getElementById("view-highscores-btn"),
+        backToStart: document.getElementById("back-to-start-btn"),
+        saveScore: document.getElementById("save-score-btn"),
+      };
+      const categoryGrid = document.querySelector(".category-grid");
+      const questionText = document.getElementById("question-text");
+      const optionsContainer = document.getElementById("options-container");
+      const livesContainer = document.querySelector("#lives-container span");
+      const scoreContainer = document.querySelector("#score-container span");
+      const streakContainer = document.querySelector("#streak-container span");
+      const finalScoreText = document.getElementById("final-score");
+
+      // O tipText foi removido
+      const timerBar = document.getElementById("timer-bar");
+      const saveScoreForm = document.getElementById("save-score-form");
+      const highscoreList = document.getElementById("highscore-list");
+      const gameContainer = document.querySelector(".container");
+      const highscoreMessage = document.getElementById("highscore-message");
+      const transitionFeedback = document.getElementById("transition-feedback");
+      const transitionDetails = document.getElementById("transition-details");
+      const continueGameBtn = document.getElementById("continue-game-btn");
+
+      // NOVOS ELEMENTOS DA TELA DE PONTUAÇÃO
+      const scoreIconContainer = document.getElementById(
+        "score-icon-container"
+      );
+      const scoreTitle = document.getElementById("score-title");
+      const statsCorrect = document.getElementById("stats-correct");
+      const statsAccuracy = document.getElementById("stats-accuracy");
+      const statsStreak = document.getElementById("stats-streak");
+      const backgroundMusic = document.getElementById("audio-background");
+
+      // --- ESTADO DO JOGO ---
+      const INITIAL_LIVES = 3;
+      const TIME_PER_QUESTION = 180; // Em segundos
+      const STREAK_BONUS = 5;
+      const POINTS = { easy: 10, medium: 15, hard: 20, ultra_hard: 30 };
+      let lives = 0;
+      let score = 0;
+      let streak = 0;
+      let longestStreak = 0;
+      let questions = [];
+      let currentQuestionIndex = 0;
+      let selectedCategories = new Set();
+      let correctAnswers = 0;
+      let availableTips = 2;
+      let timerInterval = null;
+      let timerEndTime = 0;
+      let currentUser = null;
+
+      // --- EFEITOS SONOROS E MÚSICA ---
+      function playSound(type) {
+        const soundMap = {
+          click: document.getElementById("audio-click"),
+          question: document.getElementById("audio-question"),
+          correct: document.getElementById("audio-correct"),
+          incorrect: document.getElementById("audio-incorrect"),
+          timeout: document.getElementById("audio-timeout"),
+        };
+        const audio = soundMap[type];
+        if (audio) {
+          audio.currentTime = 0;
+          audio.play().catch((e) => console.error("Erro ao tocar áudio:", e));
+        }
+      }
+
+      function toggleBackgroundMusic(shouldPlay) {
+        if (shouldPlay) {
+          backgroundMusic.volume = 0.3;
+          const playPromise = backgroundMusic.play();
+          if (playPromise !== undefined) {
+            playPromise.catch((error) => {
+              console.log(
+                "Música de fundo aguardando interação do usuário para iniciar."
+              );
+            });
+          }
+        } else {
+          backgroundMusic.pause();
+        }
+      }
+
+      const startMusicOnFirstInteraction = () => {
+        toggleBackgroundMusic(true);
+        document.body.removeEventListener(
+          "click",
+          startMusicOnFirstInteraction
+        );
+        document.body.removeEventListener(
+          "keydown",
+          startMusicOnFirstInteraction
+        );
+      };
+      document.body.addEventListener("click", startMusicOnFirstInteraction);
+      document.body.addEventListener("keydown", startMusicOnFirstInteraction);
+
+      // --- LÓGICA DE AUTENTICAÇÃO ---
+
+      onAuthStateChanged(auth, (user) => {
+        currentUser = user;
+        if (user) {
+          if (user.displayName) {
+            userNicknameDisplay.textContent = user.displayName;
+            userInfoHeader.style.display = "flex";
+            showScreen("start");
+          } else {
+            document.getElementById("nickname-input").value = "";
+            showScreen("nickname");
+          }
+        } else {
+          userInfoHeader.style.display = "none";
+          showScreen("login");
+        }
+      });
+
+      function displayAuthError(screen, message) {
+        const errorElement = document.getElementById(`${screen}-error`);
+        if (errorElement) {
+          errorElement.textContent = message;
+          errorElement.style.color = "var(--incorrect-color)";
+        }
+      }
+
+      function clearAuthErrors() {
+        document
+          .querySelectorAll(".auth-error")
+          .forEach((el) => (el.textContent = ""));
+      }
+
+      document.querySelectorAll(".auth-form input").forEach((input) => {
+        input.addEventListener("focus", clearAuthErrors);
+      });
+
+      loginForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        playSound("click");
+        const email = document.getElementById("login-email").value;
+        const password = document.getElementById("login-password").value;
+        signInWithEmailAndPassword(auth, email, password).catch((error) =>
+          displayAuthError("login", "E-mail ou senha inválidos.")
+        );
+      });
+
+      registerForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        playSound("click");
+        const email = document.getElementById("register-email").value;
+        const password = document.getElementById("register-password").value;
+        if (password.length < 6) {
+          displayAuthError(
+            "register",
+            "A senha deve ter no mínimo 6 caracteres."
+          );
+          return;
+        }
+        createUserWithEmailAndPassword(auth, email, password).catch((error) => {
+          if (error.code === "auth/email-already-in-use") {
+            displayAuthError("register", "Este e-mail já está em uso.");
+          } else {
+            displayAuthError(
+              "register",
+              "Erro ao criar conta. Tente novamente."
+            );
+          }
+        });
+      });
+
+      nicknameForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        playSound("click");
+        const nick = document.getElementById("nickname-input").value.trim();
+        if (nick && currentUser) {
+          try {
+            await updateProfile(currentUser, { displayName: nick });
+
+            userNicknameDisplay.textContent = nick;
+            userInfoHeader.style.display = "flex";
+            showScreen("start");
+          } catch (error) {
+            console.error("Erro ao salvar o perfil:", error);
+            displayAuthError("nickname", "Erro ao salvar o apelido.");
+          }
+        } else {
+          displayAuthError("nickname", "Por favor, insira um apelido válido.");
+        }
+      });
+
+      const handleGoogleSignIn = () => {
+        playSound("click");
+        const provider = new GoogleAuthProvider();
+        signInWithPopup(auth, provider)
+          .then(async (result) => {
+            const additionalUserInfo = getAdditionalUserInfo(result);
+            if (additionalUserInfo?.isNewUser) {
+              const user = result.user;
+              // Forçamos a tela de nickname zerando o displayName
+              // Mesmo que o Google forneça um nome, queremos o nick do jogo.
+              await updateProfile(user, { displayName: null });
+            }
+            // O onAuthStateChanged vai lidar com a transição de tela
+          })
+          .catch((error) => {
+            console.error("Erro no login com Google:", error);
+            const activeScreen = document
+              .querySelector(".screen.active")
+              .id.split("-")[0];
+            displayAuthError(
+              activeScreen,
+              "Não foi possível conectar com o Google."
+            );
+          });
+      };
+
+      googleLoginBtn.addEventListener("click", handleGoogleSignIn);
+      googleRegisterBtn.addEventListener("click", handleGoogleSignIn);
+
+      logoutBtn.addEventListener("click", () => {
+        playSound("click");
+        signOut(auth);
+      });
+
+      showRegisterLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        playSound("click");
+        clearAuthErrors();
+        showScreen("register");
+      });
+      showLoginLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        playSound("click");
+        clearAuthErrors();
+        showScreen("login");
+      });
+
+      forgotPasswordLink.addEventListener("click", (e) => {
+        e.preventDefault();
+        playSound("click");
+        const loginError = document.getElementById("login-error");
+        const emailInput = document.getElementById("login-email");
+        const email = emailInput.value.trim();
+
+        if (!email) {
+          displayAuthError(
+            "login",
+            "Digite seu e-mail no campo acima para redefinir a senha."
+          );
+          return;
+        }
+
+        sendPasswordResetEmail(auth, email)
+          .then(() => {
+            loginError.textContent = `E-mail de redefinição enviado para ${email}.`;
+            loginError.style.color = "var(--correct-color)";
+          })
+          .catch((error) => {
+            console.error(error);
+            displayAuthError(
+              "login",
+              "Falha ao enviar e-mail. Verifique o endereço."
+            );
+          });
+      });
+
+      // --- FUNÇÕES DE LÓGICA DO JOGO ---
+      async function fetchQuestions(categories) {
+        const allQuestions = [];
+        // NOTA: Os caminhos para os JSON foram mantidos.
+        // Certifique-se de que os arquivos (portugues.json, etc.) existem na pasta /perguntas/
+        const promises = Array.from(categories).map(async (category) => {
+          try {
+            const response = await fetch(`./perguntas/${category}.json`);
+            if (!response.ok)
+              throw new Error(`Erro ao carregar: ${category}.json`);
+            const data = await response.json();
+            allQuestions.push(...data);
+          } catch (error) {
+            console.error(error);
+          }
+        });
+        await Promise.all(promises);
+        return allQuestions;
+      }
+
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+      }
+
+      async function startGame() {
+        toggleBackgroundMusic(false);
+        if (selectedCategories.size === 0) return;
+        lives = INITIAL_LIVES;
+        score = 0;
+        streak = 0;
+        longestStreak = 0;
+        currentQuestionIndex = 0;
+        correctAnswers = 0;
+        availableTips = 2;
+
+        // MUDANÇA: Lógica de dificuldade gradativa
+        const allQuestions = await fetchQuestions(selectedCategories);
+
+        if (allQuestions.length === 0) {
+          questionText.innerText =
+            "Nenhuma pergunta foi carregada. Tente novamente.";
+          optionsContainer.innerHTML = "";
+          setTimeout(() => showScreen("start"), 4000);
+          return;
+        }
+
+        // 1. Define a ordem de dificuldade
+        const difficultyOrder = {
+          easy: 1,
+          medium: 2,
+          hard: 3,
+          ultra_hard: 4,
+        };
+
+        // 2. Filtra as perguntas por dificuldade
+        const easy = allQuestions.filter((q) => q.difficulty === "easy");
+        const medium = allQuestions.filter((q) => q.difficulty === "medium");
+        const hard = allQuestions.filter((q) => q.difficulty === "hard");
+        const ultra_hard = allQuestions.filter(
+          (q) => q.difficulty === "ultra_hard"
+        );
+        // Fallback para perguntas sem dificuldade definida
+        const others = allQuestions.filter(
+          (q) => !difficultyOrder[q.difficulty]
+        );
+
+        // 3. Embaralha cada grupo de dificuldade individualmente
+        shuffleArray(easy);
+        shuffleArray(medium);
+        shuffleArray(hard);
+        shuffleArray(ultra_hard);
+        shuffleArray(others);
+
+        // 4. Concatena os grupos em ordem para criar a fila de perguntas
+        questions = [...easy, ...medium, ...hard, ...ultra_hard, ...others];
+
+        // A linha original 'shuffleArray(questions)' foi removida
+        // Fim da MUDANÇA
+
+        updateUI();
+        displayQuestion();
+      }
+
+      function displayQuestion() {
+        if (currentQuestionIndex >= questions.length) {
+          // Reinicia o ciclo de perguntas se todas foram vistas
+          currentQuestionIndex = 0;
+          // Re-embaralha dentro das dificuldades e recria a lista
+          // (Opcional, mas mantém a variedade se o jogador jogar muito)
+          const easy = questions.filter((q) => q.difficulty === "easy");
+          const medium = questions.filter((q) => q.difficulty === "medium");
+          const hard = questions.filter((q) => q.difficulty === "hard");
+          const ultra_hard = questions.filter(
+            (q) => q.difficulty === "ultra_hard"
+          );
+          const others = questions.filter((q) => !POINTS[q.difficulty]);
+
+          shuffleArray(easy);
+          shuffleArray(medium);
+          shuffleArray(hard);
+          shuffleArray(ultra_hard);
+          shuffleArray(others);
+          questions = [...easy, ...medium, ...hard, ...ultra_hard, ...others];
+        }
+
+        // Adicionado para reativar o botão de dica (se houver dicas)
+        updateUI();
+
+        showScreen("game");
+        playSound("question");
+        const q = questions[currentQuestionIndex];
+        questionText.innerText = q.question;
+        optionsContainer.innerHTML = "";
+        // tipText.style.display = "none"; // Linha removida
+        const shuffledOptions = [...q.options];
+        shuffleArray(shuffledOptions);
+
+        shuffledOptions.forEach((option) => {
+          const originalIndex = q.options.indexOf(option);
+          const btn = document.createElement("button");
+          btn.innerText = option;
+          btn.className = "option-btn";
+          btn.dataset.answerIndex = originalIndex;
+          btn.addEventListener("click", handleAnswer);
+          optionsContainer.appendChild(btn);
+        });
+
+        startTimer();
+      }
+
+      function handleAnswer(event) {
+        playSound("click");
+        stopTimer();
+        const selectedButton = event.target;
+        const selectedAnswerIndex = parseInt(
+          selectedButton.dataset.answerIndex
+        );
+        const currentQuestion = questions[currentQuestionIndex];
+        const correctAnswerIndex = currentQuestion.answer;
+
+        Array.from(optionsContainer.children).forEach((btn) =>
+          btn.classList.add("disabled")
+        );
+
+        const isCorrect = selectedAnswerIndex === correctAnswerIndex;
+
+        if (isCorrect) {
+          playSound("correct");
+          selectedButton.classList.add("correct");
+          const pointsEarned = POINTS[currentQuestion.difficulty] || 10;
+          score += pointsEarned;
+          correctAnswers++;
+          streak++;
+          longestStreak = Math.max(longestStreak, streak);
+          if (streak >= 3 && streak % 3 === 0) {
+            score += STREAK_BONUS;
+            showBonusPopup(`+${STREAK_BONUS} BÔNUS!`);
+          }
+        } else {
+          playSound("incorrect");
+          selectedButton.classList.add("incorrect");
+          lives--;
+          streak = 0;
+          const correctButton = optionsContainer.querySelector(
+            `[data-answer-index='${correctAnswerIndex}']`
+          );
+          if (correctButton) correctButton.classList.add("correct");
+        }
+
+        updateUI();
+
+        setTimeout(() => {
+          if (lives <= 0) {
+            endGame();
+            return;
+          }
+
+          if (isCorrect) {
+            transitionFeedback.textContent = "Resposta Correta!";
+            transitionFeedback.style.color = "var(--text-color)";
+            transitionDetails.textContent = "";
+          } else {
+            transitionFeedback.textContent = "Resposta Incorreta!";
+            transitionFeedback.style.color = "var(--incorrect-color)";
+            transitionDetails.textContent = "";
+          }
+          currentQuestionIndex++;
+          showScreen("transition");
+        }, 1800);
+      }
+
+      function handleTimeout() {
+        stopTimer();
+        playSound("incorrect");
+        streak = 0;
+        lives--;
+
+        Array.from(optionsContainer.children).forEach((btn) => {
+          btn.classList.add("disabled", "incorrect");
+        });
+        const correctAnswerIndex = questions[currentQuestionIndex].answer;
+        const correctButton = optionsContainer.querySelector(
+          `[data-answer-index='${correctAnswerIndex}']`
+        );
+        if (correctButton) {
+          correctButton.classList.remove("incorrect");
+          correctButton.classList.add("correct");
+        }
+
+        updateUI();
+
+        setTimeout(() => {
+          if (lives <= 0) {
+            endGame();
+            return;
+          }
+
+          transitionFeedback.textContent = "Tempo Esgotado!";
+          transitionFeedback.style.color = "var(--warning-color)";
+          transitionDetails.textContent = "";
+
+          currentQuestionIndex++;
+          showScreen("transition");
+        }, 1800);
+      }
+
+      function startTimer() {
+        stopTimer();
+        let timeoutSoundPlayed = false;
+        timerEndTime = Date.now() + TIME_PER_QUESTION * 1000;
+
+        // Reset visual da barra
+        timerBar.style.transition = "none";
+        timerBar.style.backgroundColor = ""; // Reseta para o gradiente
+        timerBar.style.width = "100%";
+
+        // Força o reflow para aplicar o reset antes da transição
+        void timerBar.offsetWidth;
+
+        // Inicia a animação
+        requestAnimationFrame(() => {
+          timerBar.style.transition = `width ${TIME_PER_QUESTION}s linear, background-color 0.5s ease`;
+          timerBar.style.width = "0%";
+        });
+
+        timerInterval = setInterval(() => {
+          const timeLeft = timerEndTime - Date.now();
+          const percentage = (timeLeft / (TIME_PER_QUESTION * 1000)) * 100;
+
+          // Toca som de timeout
+          if (timeLeft <= 5000 && !timeoutSoundPlayed) {
+            playSound("timeout");
+            timeoutSoundPlayed = true;
+          }
+
+          // Muda a cor da barra
+          if (
+            percentage < 25 &&
+            timerBar.style.backgroundColor !== "var(--incorrect-color)"
+          ) {
+            timerBar.style.backgroundColor = "var(--incorrect-color)";
+          } else if (
+            percentage < 50 &&
+            percentage > 25 &&
+            timerBar.style.backgroundColor !== "var(--warning-color)"
+          ) {
+            timerBar.style.backgroundColor = "var(--warning-color)";
+          }
+
+          // Fim do tempo
+          if (timeLeft <= 0) {
+            handleTimeout();
+          }
+        }, 50); // Intervalo mais rápido para suavidade
+      }
+
+      function stopTimer() {
+        clearInterval(timerInterval);
+      }
+
+      async function endGame() {
+        stopTimer();
+
+        let isHighScore = false;
+        try {
+          const q = query(
+            highscoresCollection,
+            orderBy("score", "desc"),
+            limit(10)
+          );
+          const querySnapshot = await getDocs(q);
+          if (querySnapshot.docs.length < 10) {
+            isHighScore = true;
+          } else {
+            const lowestHighScore =
+              querySnapshot.docs[querySnapshot.docs.length - 1].data().score;
+            if (score > lowestHighScore) {
+              isHighScore = true;
+            }
+          }
+        } catch (error) {
+          console.error("Erro ao verificar o placar: ", error);
+          isHighScore = true; // Permite salvar se houver erro na leitura
+        }
+
+        showScreen("score");
+
+        const totalAttempted = currentQuestionIndex; // Total de perguntas respondidas
+        const accuracy =
+          totalAttempted > 0
+            ? Math.round((correctAnswers / totalAttempted) * 100)
+            : 0;
+
+        finalScoreText.innerText = score;
+        statsCorrect.innerText = correctAnswers;
+        statsAccuracy.innerText = `${accuracy}%`;
+        statsStreak.innerText = longestStreak;
+
+        // Ícone de troféu
+        const trophyIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V2M12 8c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4zm0 8v2m-6 2h12M5 12H3m18 0h-2m-3.5-3.5L4.93 4.93m14.14 0l-3.53 3.53m0 7.07l3.53 3.53m-14.14 0l3.53-3.53"></path></svg>`;
+        // Ícone de "triste" (alerta)
+        const sadIcon = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="var(--text-color-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>`;
+
+        if (isHighScore && score > 0) {
+          scoreTitle.textContent = "NOVO RECORDE!";
+          scoreIconContainer.innerHTML = trophyIcon;
+          saveScoreForm.style.display = "block";
+          buttons.saveScore.style.display = "block";
+          highscoreMessage.textContent = "Parabéns! Você está no Top 10!";
+          buttons.saveScore.disabled = false;
+          buttons.saveScore.innerText = "Salvar Placar";
+        } else {
+          scoreTitle.textContent = "Fim de Jogo!";
+          scoreIconContainer.innerHTML = sadIcon;
+          saveScoreForm.style.display = "block";
+          highscoreMessage.textContent =
+            score > 0
+              ? "Quase lá! Continue treinando para entrar no ranking."
+              : "A jornada é longa. Tente novamente!";
+          buttons.saveScore.style.display = "none";
+        }
+      }
+
+      // --- FUNÇÕES DE UI E FIREBASE ---
+      async function saveScore(e) {
+        e.preventDefault();
+        playSound("click");
+
+        if (!currentUser || !currentUser.displayName) {
+          highscoreMessage.textContent =
+            "Você precisa estar logado para salvar!";
+          return;
+        }
+
+        buttons.saveScore.disabled = true;
+        buttons.saveScore.innerText = "Salvando...";
+
+        try {
+          await addDoc(highscoresCollection, {
+            name: currentUser.displayName,
+            score: score,
+            uid: currentUser.uid,
+            createdAt: new Date(),
+          });
+          buttons.saveScore.innerText = "Salvo!";
+          setTimeout(fetchAndShowHighscores, 1500); // Mostra o ranking após salvar
+        } catch (error) {
+          console.error("Erro ao salvar o placar: ", error);
+          highscoreMessage.textContent =
+            "Não foi possível salvar seu placar. Tente novamente.";
+          buttons.saveScore.disabled = false;
+          buttons.saveScore.innerText = "Salvar Placar";
+        }
+      }
+
+      async function fetchAndShowHighscores() {
+        showScreen("highscore");
+        highscoreList.innerHTML = "<li>Carregando...</li>";
+        try {
+          const q = query(
+            highscoresCollection,
+            orderBy("score", "desc"),
+            limit(10)
+          );
+          const querySnapshot = await getDocs(q);
+          highscoreList.innerHTML = "";
+          if (querySnapshot.empty) {
+            highscoreList.innerHTML =
+              "<li>Nenhum placar registrado ainda.</li>";
+            return;
+          }
+          let rank = 1;
+          querySnapshot.forEach((doc) => {
+            const data = doc.data();
+            const li = document.createElement("li");
+
+            li.innerHTML = `
+                <div class="highscore-entry">
+                  <span style="width: 25px; text-align: left; flex-shrink: 0;">${rank}.</span>
+                  <span class="highscore-name">${data.name}</span>
+                </div>
+                <span class="highscore-score">${data.score}</span>
+              `;
+            highscoreList.appendChild(li);
+            rank++;
+          });
+        } catch (error) {
+          console.error("Erro ao buscar placares: ", error);
+          highscoreList.innerHTML = "<li>Erro ao carregar os placares.</li>";
+        }
+      }
+
+      function showScreen(screenName) {
+        Object.keys(screens).forEach((key) => {
+          screens[key].classList.remove("active");
+        });
+        if (screens[screenName]) {
+          screens[screenName].classList.add("active");
+        }
+      }
+
+      function showBonusPopup(text) {
+        const popup = document.createElement("div");
+        popup.innerText = text;
+        popup.className = "bonus-popup";
+        gameContainer.appendChild(popup);
+        setTimeout(() => popup.remove(), 1500);
+      }
+
+      function updateUI() {
+        scoreContainer.innerText = score;
+        livesContainer.innerText = lives;
+        streakContainer.innerText = streak;
+        buttons.tip.innerText = `Usar Dica (${availableTips})`;
+        // Habilita/desabilita o botão baseado apenas na contagem de dicas
+        buttons.tip.disabled = availableTips <= 0;
+      }
+
+      function showTip() {
+        // Verifica se há dicas disponíveis e se os botões de opção ainda não foram respondidos
+        const firstOption = optionsContainer.querySelector(".option-btn");
+        if (
+          availableTips <= 0 ||
+          !firstOption ||
+          firstOption.classList.contains("disabled")
+        ) {
+          return;
+        }
+
+        playSound("click");
+        availableTips--;
+
+        const currentQuestion = questions[currentQuestionIndex];
+        const correctAnswerIndex = currentQuestion.answer;
+
+        // Pega todos os botões de opção
+        const allOptions = Array.from(optionsContainer.children);
+
+        // Filtra para encontrar apenas os incorretos
+        const incorrectOptions = allOptions.filter(
+          (btn) => parseInt(btn.dataset.answerIndex) !== correctAnswerIndex
+        );
+
+        // Embaralha os incorretos
+        shuffleArray(incorrectOptions);
+
+        // Seleciona os dois primeiros para "eliminar"
+        const optionsToDisable = incorrectOptions.slice(0, 2);
+
+        // Aplica o estilo de desativado
+        optionsToDisable.forEach((btn) => {
+          btn.classList.add("disabled"); // Adiciona a classe para segurança
+          btn.style.opacity = "0.3";
+          btn.style.pointerEvents = "none"; // Impede cliques
+        });
+
+        updateUI(); // Atualiza a contagem de dicas no botão
+        buttons.tip.disabled = true; // Desativa o botão de dica *para esta pergunta*
+      }
+
+      // --- EVENT LISTENERS ---
+      buttons.start.addEventListener("click", () => {
+        playSound("click");
+        startGame();
+      });
+      buttons.playAgain.addEventListener("click", () => {
+        playSound("click");
+        toggleBackgroundMusic(true);
+        showScreen("start");
+      });
+      buttons.tip.addEventListener("click", showTip);
+      buttons.viewHighscores.addEventListener("click", () => {
+        playSound("click");
+        fetchAndShowHighscores();
+      });
+      buttons.backToStart.addEventListener("click", () => {
+        playSound("click");
+        toggleBackgroundMusic(true);
+        showScreen("start");
+      });
+      saveScoreForm.addEventListener("submit", saveScore);
+
+      continueGameBtn.addEventListener("click", () => {
+        playSound("click");
+        if (lives > 0) {
+          displayQuestion();
+        } else {
+          endGame();
+        }
+      });
+
+      categoryGrid.addEventListener("click", (e) => {
+        const button = e.target.closest(".category-btn");
+        if (button) {
+          playSound("click");
+          const category = button.dataset.category;
+          button.classList.toggle("selected");
+          if (selectedCategories.has(category)) {
+            selectedCategories.delete(category);
+          } else {
+            selectedCategories.add(category);
+          }
+          buttons.start.disabled = selectedCategories.size === 0;
+        }
+      });
+    </script>
+  </body>
+</html>

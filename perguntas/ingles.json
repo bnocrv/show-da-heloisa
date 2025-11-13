@@ -1,0 +1,307 @@
+[
+  {
+    "question": "Qual é a tradução de 'gato' em inglês?",
+    "options": ["Dog", "Cat", "Bird", "Fish"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a cor 'vermelho' em inglês?",
+    "options": ["Blue", "Green", "Red", "Yellow"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'três' em inglês?",
+    "options": ["One", "Two", "Three", "Four"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "'Mother' significa o quê?",
+    "options": ["Pai", "Irmão", "Mãe", "Irmã"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'olá' em inglês?",
+    "options": ["Goodbye", "Hello", "Yes", "No"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O oposto de 'big' (grande) é...",
+    "options": ["Small", "Hot", "Cold", "Happy"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a tradução de 'cachorro' em inglês?",
+    "options": ["Mouse", "Horse", "Dog", "Lion"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a cor 'azul' em inglês?",
+    "options": ["Blue", "Black", "White", "Purple"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'dez' em inglês?",
+    "options": ["Five", "Eight", "Nine", "Ten"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "'Father' significa o quê?",
+    "options": ["Tio", "Avô", "Primo", "Pai"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'sim' em inglês?",
+    "options": ["No", "Maybe", "Yes", "Please"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'não' em inglês?",
+    "options": ["No", "Yes", "Thank you", "Sorry"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "'Apple' significa o quê?",
+    "options": ["Banana", "Laranja", "Maçã", "Uva"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'dia' em inglês?",
+    "options": ["Night", "Day", "Week", "Month"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se diz 'noite' em inglês?",
+    "options": ["Morning", "Afternoon", "Evening", "Night"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que significa 'to run'?",
+    "options": ["Correr", "Andar", "Pular", "Nadar"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que significa 'to eat'?",
+    "options": ["Beber", "Dormir", "Comer", "Falar"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O plural de 'book' (livro) é...",
+    "options": ["Bookes", "Books", "Booken", "Bok"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O plural de 'car' (carro) é...",
+    "options": ["Cars", "Cares", "Car", "Carro"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "'Water' significa o quê?",
+    "options": ["Suco", "Leite", "Água", "Vinho"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o passado de 'go' (ir)?",
+    "options": ["Goed", "Went", "Gone", "Going"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o passado de 'see' (ver)?",
+    "options": ["See", "Saw", "Seen", "Sees"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 'The book is ___ the table.'",
+    "options": ["in", "at", "on", "with"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 'I go to school ___ bus.'",
+    "options": ["by", "with", "in", "on"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 'She is ___ doctor.'",
+    "options": ["a", "an", "the", "some"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 'He ate ___ apple.'",
+    "options": ["a", "an", "the", "some"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: '___ is my friend.' (Ele)",
+    "options": ["He", "She", "It", "They"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: '___ are students.' (Eles/Elas)",
+    "options": ["He", "She", "It", "They"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O oposto de 'fast' (rápido) é...",
+    "options": ["Quick", "Slow", "Speed", "Run"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O oposto de 'hot' (quente) é...",
+    "options": ["Warm", "Sun", "Cold", "Fire"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o comparativo de 'good' (bom)?",
+    "options": ["Gooder", "Better", "Best", "More good"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o superlativo de 'bad' (ruim)?",
+    "options": ["Badder", "Worse", "Worst", "More bad"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 'She ___ (mora) in London.'",
+    "options": ["live", "lives", "living", "lived"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Complete: 'They ___ (estão jogando) football now.'",
+    "options": ["play", "plays", "is playing", "are playing"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "'Tomorrow' significa o quê?",
+    "options": ["Ontem", "Hoje", "Amanhã", "Agora"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "'Yesterday' significa o quê?",
+    "options": ["Ontem", "Hoje", "Amanhã", "Antes"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual modal usar para 'permissão'?",
+    "options": ["Must", "Should", "Can", "Will"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual modal usar para 'obrigação forte'?",
+    "options": ["Must", "May", "Can", "Could"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra usamos para perguntar 'Onde'?",
+    "options": ["Who", "What", "When", "Where"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra usamos para perguntar 'Quem'?",
+    "options": ["Who", "What", "Why", "How"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que significa 'to give up'?",
+    "options": ["Dar", "Receber", "Desistir", "Subir"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que significa 'to look for'?",
+    "options": ["Olhar", "Procurar", "Encontrar", "Ver"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 'If I ___ you, I would study more.'",
+    "options": ["am", "was", "were", "be"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 'If she had studied, she ___ passed.'",
+    "options": ["will", "would", "will have", "would have"],
+    "answer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é o particípio passado de 'write' (escrever)?",
+    "options": ["Wrote", "Written", "Writed", "Writing"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é o particípio passado de 'eat' (comer)?",
+    "options": ["Ate", "Eated", "Eaten", "Eating"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que significa 'consequently'?",
+    "options": ["Eventualmente", "Consequentemente", "Na verdade", "Quase"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que significa a expressão 'It's raining cats and dogs'?",
+    "options": [
+      "Está chovendo pouco",
+      "Está chovendo muito",
+      "Está chovendo granizo",
+      "Está nevando"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 'I enjoy ___ (ler).'",
+    "options": ["to read", "reading", "read", "reads"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Complete: 'She decided ___ (ir).'",
+    "options": ["to go", "going", "go", "goes"],
+    "answer": 0,
+    "difficulty": "hard"
+  }
+]

@@ -1,0 +1,427 @@
+[
+  {
+    "question": "Qual é o maior continente do mundo em área territorial?",
+    "options": ["África", "América do Norte", "Europa", "Ásia"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o oceano mais extenso do planeta?",
+    "options": [
+      "Oceano Pacífico",
+      "Oceano Atlântico",
+      "Oceano Índico",
+      "Oceano Ártico"
+    ],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a capital da França?",
+    "options": ["Berlim", "Madri", "Paris", "Roma"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a montanha mais alta do mundo?",
+    "options": ["K2", "Monte Everest", "Aconcágua", "Monte Kilimanjaro"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o país mais populoso do mundo atualmente?",
+    "options": ["China", "Estados Unidos", "Índia", "Indonésia"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o rio mais longo do mundo?",
+    "options": ["Rio Nilo", "Rio Amazonas", "Rio Mississippi", "Rio Yangtze"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em qual continente está localizado o Deserto do Saara?",
+    "options": ["Ásia", "América do Sul", "Austrália", "África"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a capital do Japão?",
+    "options": ["Pequim", "Seul", "Tóquio", "Bangkok"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quantos continentes existem (na convenção mais comum no Brasil)?",
+    "options": ["4", "5", "6", "7"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que país ficam as pirâmides de Gizé?",
+    "options": ["Grécia", "Egito", "México", "Peru"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o maior país do mundo em área territorial?",
+    "options": ["China", "Canadá", "Estados Unidos", "Rússia"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o menor continente do mundo?",
+    "options": ["Europa", "Antártida", "Oceania", "América do Sul"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a capital da Argentina?",
+    "options": ["Santiago", "Buenos Aires", "Lima", "Bogotá"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual desses países NÃO faz fronteira com o Brasil?",
+    "options": ["Argentina", "Colômbia", "Peru", "Chile"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que é um arquipélago?",
+    "options": [
+      "Uma grande montanha",
+      "Um conjunto de ilhas",
+      "Um rio subterrâneo",
+      "Um tipo de deserto"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual o nome do movimento que a Terra faz em torno do Sol?",
+    "options": ["Rotação", "Translação", "Precessão", "Nutação"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual o nome do movimento que a Terra faz em torno de si mesma?",
+    "options": ["Rotação", "Translação", "Eclíptica", "Solstício"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o maior bioma brasileiro?",
+    "options": ["Mata Atlântica", "Cerrado", "Amazônia", "Pampas"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a capital do Brasil?",
+    "options": ["São Paulo", "Rio de Janeiro", "Salvador", "Brasília"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Em que continente fica a Cordilheira dos Andes?",
+    "options": ["América do Sul", "América do Norte", "Ásia", "Europa"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que é a Linha do Equador?",
+    "options": [
+      "O meridiano principal",
+      "O círculo polar ártico",
+      "A linha imaginária que divide a Terra em Hemisfério Norte e Sul",
+      "O trópico de Câncer"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o Meridiano Principal, que divide a Terra em Leste e Oeste?",
+    "options": [
+      "Meridiano de Greenwich",
+      "Linha do Equador",
+      "Trópico de Capricórnio",
+      "Círculo Polar Antártico"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o maior deserto de gelo do mundo?",
+    "options": ["Saara", "Groenlândia", "Antártida", "Deserto de Gobi"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o clima predominante na região Norte do Brasil?",
+    "options": [
+      "Semiárido",
+      "Equatorial",
+      "Tropical de Altitude",
+      "Subtropical"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é um istmo?",
+    "options": [
+      "Uma porção de terra cercada de água por todos os lados",
+      "Um conjunto de montanhas",
+      "Uma estreita faixa de terra que liga duas grandes massas de terra",
+      "A foz de um rio em forma de delta"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o nome do fenômeno causado pelo encontro de placas tectônicas?",
+    "options": ["Tsunami", "Furacão", "Terremoto", "Erosão"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual país é conhecido como a 'terra do sol nascente'?",
+    "options": ["China", "Coreia do Sul", "Japão", "Tailândia"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o nome da teoria que explica a movimentação dos continentes?",
+    "options": [
+      "Teoria da Relatividade",
+      "Deriva Continental / Tectônica de Placas",
+      "Teoria do Big Bang",
+      "Evolucionismo"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o lago mais profundo do mundo?",
+    "options": [
+      "Lago Superior (América do Norte)",
+      "Lago Vitória (África)",
+      "Lago Baikal (Rússia)",
+      "Mar Cáspio"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que mede a Escala Richter?",
+    "options": [
+      "A velocidade dos ventos",
+      "A intensidade (magnitude) dos terremotos",
+      "A temperatura",
+      "A precipitação (chuva)"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o clima característico do sertão nordestino brasileiro?",
+    "options": ["Equatorial", "Tropical Litorâneo", "Semiárido", "Subtropical"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é uma 'península'?",
+    "options": [
+      "Uma faixa de terra cercada de água por quase todos os lados, exceto um",
+      "Uma ilha vulcânica",
+      "Um rio que seca durante o inverno",
+      "Um planalto elevado"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Em qual país está localizado o Estreito de Gibraltar?",
+    "options": [
+      "Divide Espanha e Marrocos",
+      "Divide Itália e Sicília",
+      "Divide Reino Unido e França",
+      "Divide Grécia e Turquia"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o ponto mais alto do Brasil?",
+    "options": [
+      "Pico da Bandeira",
+      "Pico 31 de Março",
+      "Pico da Neblina",
+      "Monte Roraima"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é 'densidade demográfica'?",
+    "options": [
+      "O número total de pessoas em um país",
+      "A taxa de natalidade",
+      "A taxa de mortalidade",
+      "O número de habitantes por quilômetro quadrado"
+    ],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o maior deserto quente do mundo?",
+    "options": [
+      "Deserto da Arábia",
+      "Deserto de Gobi",
+      "Deserto do Saara",
+      "Deserto da Patagônia"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que o movimento de translação, combinado com a inclinação do eixo da Terra, causa?",
+    "options": [
+      "Os dias e as noites",
+      "As estações do ano",
+      "As marés",
+      "Os terremotos"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual desses biomas é conhecido como a 'savana brasileira'?",
+    "options": ["Caatinga", "Pampas", "Cerrado", "Pantanal"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "A que se refere o termo 'Latitude'?",
+    "options": [
+      "Distância em graus ao Leste ou Oeste do Meridiano de Greenwich",
+      "Distância em graus ao Norte ou Sul da Linha do Equador",
+      "Altitude de um local em relação ao nível do mar",
+      "A profundidade de um oceano"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "A que se refere o termo 'Longitude'?",
+    "options": [
+      "Distância em graus ao Leste ou Oeste do Meridiano de Greenwich",
+      "Distância em graus ao Norte ou Sul da Linha do Equador",
+      "A distância entre dois trópicos",
+      "A duração do dia"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que é o 'Círculo de Fogo do Pacífico'?",
+    "options": [
+      "Uma rota comercial marítima",
+      "Uma área com muitos desertos quentes",
+      "Uma área de intensa atividade vulcânica e terremotos",
+      "Um fenômeno climático"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é a principal causa das 'Monções' na Ásia?",
+    "options": [
+      "Correntes marítimas frias",
+      "Diferença de temperatura e pressão entre o continente e o oceano",
+      "Atividade vulcânica",
+      "A rotação da Terra"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é um 'Fiorde'?",
+    "options": [
+      "Um tipo de planície fértil",
+      "Um deserto de sal",
+      "Um antigo vale glacial invadido pela água do mar",
+      "Uma montanha com topo plano"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual é a camada mais interna da Terra?",
+    "options": ["Crosta", "Manto", "Núcleo Externo", "Núcleo Interno"],
+    "answer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é 'Erosão Eólica'?",
+    "options": [
+      "Desgaste do solo causado pela água da chuva",
+      "Desgaste do solo causado pelo vento",
+      "Desgaste do solo causado pelo gelo",
+      "Desgaste do solo causado por rios"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual o nome do supercontinente que existiu há milhões de anos, unindo quase todas as terras emersas?",
+    "options": ["Gondwana", "Laurásia", "Pangeia", "Rodínia"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é 'Albedo'?",
+    "options": [
+      "A medida da acidez do solo",
+      "A velocidade do vento",
+      "A quantidade de chuva em um ano",
+      "O percentual de radiação solar que uma superfície reflete"
+    ],
+    "answer": 3,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é um 'Aquífero'?",
+    "options": [
+      "Um rio que corre na superfície",
+      "Uma formação rochosa subterrânea que armazena água",
+      "Um lago de origem vulcânica",
+      "Uma geleira"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual o nome da corrente marítima fria que afeta o clima do deserto do Atacama?",
+    "options": [
+      "Corrente do Golfo",
+      "Corrente de Humboldt",
+      "Corrente do Brasil",
+      "Corrente de El Niño"
+    ],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "O que é 'Intemperismo'?",
+    "options": [
+      "O processo de transporte de sedimentos",
+      "O processo de formação de montanhas",
+      "O processo de decomposição e desagregação das rochas",
+      "O processo de formação de nuvens"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  }
+]

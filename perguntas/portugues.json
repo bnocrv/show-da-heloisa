@@ -1,0 +1,337 @@
+[
+  {
+    "question": "Quais são as 5 vogais?",
+    "options": [
+      "A, B, C, D, E",
+      "A, E, I, O, U",
+      "B, C, D, F, G",
+      "1, 2, 3, 4, 5"
+    ],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quantas sílabas tem a palavra 'BOLA'?",
+    "options": ["Uma", "Duas", "Três", "Quatro"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual letra vem depois do 'B' no alfabeto?",
+    "options": ["A", "D", "C", "E"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o feminino de 'MENINO'?",
+    "options": ["Menina", "Mulher", "Moça", "Garota"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o plural de 'GATO'?",
+    "options": ["Gata", "Gatos", "Gatinho", "Gatão"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual dessas palavras começa com a letra 'M'?",
+    "options": ["Casa", "Nuvem", "Maçã", "Sol"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quantas letras tem a palavra 'SOL'?",
+    "options": ["Uma", "Duas", "Três", "Quatro"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o feminino de 'PAI'?",
+    "options": ["Filha", "Tia", "Mãe", "Avó"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual palavra rima com 'PÃO'?",
+    "options": ["Casa", "Queijo", "Mão", "Bolo"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a primeira letra da palavra 'ESCOLA'?",
+    "options": ["A", "L", "S", "E"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual dessas é uma consoante?",
+    "options": ["A", "E", "I", "B"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual dessas é uma vogal?",
+    "options": ["F", "G", "U", "T"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "O que o 'Lápis' faz?",
+    "options": ["Apaga", "Come", "Escreve", "Bebe"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o plural de 'CASA'?",
+    "options": ["Casas", "Casebre", "Casinha", "Casarão"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Quantas sílabas tem a palavra 'MACARRÃO'?",
+    "options": ["Duas", "Três", "Quatro", "Cinco"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual palavra rima com 'JANELA'?",
+    "options": ["Porta", "Panela", "Chão", "Teto"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Como se chama quem nasce no Brasil?",
+    "options": ["Brasileiro", "Brasil", "Brazil", "Português"],
+    "answer": 0,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o feminino de 'CACHORRO'?",
+    "options": ["Cachorra", "Cadela", "Cachorrinha", "Cão"],
+    "answer": 1,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual letra vem antes do 'Z'?",
+    "options": ["A", "X", "S", "Y"],
+    "answer": 3,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é a primeira letra do seu nome: 'HELOÍSA'?",
+    "options": ["A", "E", "H", "S"],
+    "answer": 2,
+    "difficulty": "easy"
+  },
+  {
+    "question": "Qual é o contrário (antônimo) de 'GRANDE'?",
+    "options": ["Alto", "Bonito", "Pequeno", "Forte"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o sinônimo (mesmo significado) de 'BONITO'?",
+    "options": ["Feio", "Ruim", "Belo", "Triste"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Que ponto usamos para fazer uma pergunta?",
+    "options": [
+      ". (Ponto Final)",
+      "? (Interrogação)",
+      "! (Exclamação)",
+      ", (Vírgula)"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Que ponto usamos para mostrar surpresa ou susto?",
+    "options": [
+      ". (Ponto Final)",
+      "? (Interrogação)",
+      "! (Exclamação)",
+      ": (Dois Pontos)"
+    ],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o nome do acento na palavra 'VOVÓ'?",
+    "options": [
+      "Chapéu (Circunflexo)",
+      "Grampo (Agudo)",
+      "Til (~)",
+      "Vírgula (,)"
+    ],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o nome do acento na palavra 'VOVÔ'?",
+    "options": [
+      "Chapéu (Circunflexo)",
+      "Grampo (Agudo)",
+      "Til (~)",
+      "Ponto (.)"
+    ],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o contrário (antônimo) de 'DIA'?",
+    "options": ["Sol", "Lua", "Tarde", "Noite"],
+    "answer": 3,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o sinônimo (mesmo significado) de 'ALEGRE'?",
+    "options": ["Triste", "Feliz", "Bravo", "Cansado"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Como se separa a palavra 'CARRO' em sílabas?",
+    "options": ["CAR-RO", "CA-RRO", "CA-R-RO", "CARRO"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra está escrita errada?",
+    "options": ["Cachorro", "Gato", "Meza", "Casa"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra está escrita certa?",
+    "options": ["Páçaro", "Pássaro", "Pásaro", "Passáro"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "A frase 'O sol é quente' é uma:",
+    "options": ["Pergunta", "Afirmação", "Negação", "Surpresa"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "A frase 'Você gosta de sorvete?' é uma:",
+    "options": ["Pergunta (Interrogativa)", "Afirmação", "Negação", "Ordem"],
+    "answer": 0,
+    "difficulty": "medium"
+  },
+  {
+    "question": "O que significa 'M' antes de 'P' e 'B'?",
+    "options": ["Nunca usar M", "Sempre usar N", "Sempre usar M", "Tanto faz"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra está certa? 'Bo___ba'",
+    "options": ["n (Bomba)", "m (Bomba)", "l (Bolba)", "r (Borba)"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra está certa? 'Po___te'",
+    "options": ["m (Pomte)", "n (Ponte)", "s (Poste)", "l (Polte)"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o coletivo de 'ABELHA'?",
+    "options": ["Cardume", "Enxame", "Rebanho", "Time"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o contrário (antônimo) de 'CHEIO'?",
+    "options": ["Completo", "Grande", "Vazio", "Redondo"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual é o sinônimo (mesmo significado) de 'DEVAGAR'?",
+    "options": ["Rápido", "Lento", "Alto", "Forte"],
+    "answer": 1,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual palavra rima com 'MARTELO'?",
+    "options": ["Prego", "Madeira", "Chinelo", "Serra"],
+    "answer": 2,
+    "difficulty": "medium"
+  },
+  {
+    "question": "Qual o plural da palavra 'PÃO'?",
+    "options": ["Pãos", "Pães", "Pãoes", "Pãosinhos"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual palavra está escrita corretamente?",
+    "options": ["Caza", "Cassa", "Casa", "Caça"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual o plural de 'PASTEL'?",
+    "options": ["Pastels", "Pastéis", "Pastel", "Pasteis"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Na frase 'Eu comi o bolo', a palavra 'comi' é:",
+    "options": [
+      "Uma ação (Verbo)",
+      "Um nome (Substantivo)",
+      "Uma qualidade (Adjetivo)",
+      "Um lugar"
+    ],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Na frase 'A menina é bonita', a palavra 'bonita' é:",
+    "options": [
+      "Uma ação (Verbo)",
+      "Um nome (Substantivo)",
+      "Uma qualidade (Adjetivo)",
+      "Um objeto"
+    ],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual palavra está escrita errada?",
+    "options": ["Gesto", "Magia", "Jirafa", "Gelo"],
+    "answer": 2,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual palavra está escrita certa?",
+    "options": ["Xícara", "Chícara", "Xíkara", "Chíkara"],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "'Mas' ou 'Mais'? 'Eu gosto de sorvete, ___ prefiro chocolate.'",
+    "options": ["Mas", "Mais", "Maus", "Maes"],
+    "answer": 0,
+    "difficulty": "hard"
+  },
+  {
+    "question": "'Mas' ou 'Mais'? 'Eu quero ___ bolo, por favor.'",
+    "options": ["Mas", "Mais", "Maus", "Maes"],
+    "answer": 1,
+    "difficulty": "hard"
+  },
+  {
+    "question": "Qual o coletivo de 'LOBOS'?",
+    "options": ["Matilha", "Manada", "Bando", "Time"],
+    "answer": 0,
+    "difficulty": "hard"
+  }
+]
